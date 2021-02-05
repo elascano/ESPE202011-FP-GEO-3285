@@ -32,10 +32,15 @@ public class WS10Functions {
 
         y = f(-3);
         System.out.println("-3^2 -> " + y); //9
-        
+
         x = -1;
         y = f(x);
         System.out.println("the square of -> " + x + " <- is equal to -> " + y);
+
+        int number = 5;
+        int fact = 0;
+        fact = factorial(number);
+        System.out.println("factorial of " + number + " is equal to -> " + fact);
 
     }
 
@@ -66,6 +71,18 @@ public class WS10Functions {
         y = x * x + 2 * x + 1;
 
         return y;
+    }
+
+    public static int factorial(int n) {
+        if (n < 0) {
+            return -1;
+        } else {
+            if (n == 0) {
+                return 1;
+            } else {
+                return (n * factorial(n - 1));
+            }
+        }
     }
 
 }
