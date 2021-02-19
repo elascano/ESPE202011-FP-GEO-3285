@@ -17,7 +17,6 @@ public class FP02_controlStatement {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
         
         Scanner scanner = new Scanner(System.in);
         
