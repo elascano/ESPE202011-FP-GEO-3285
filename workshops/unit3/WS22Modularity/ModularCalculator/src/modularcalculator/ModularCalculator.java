@@ -9,6 +9,7 @@ import java.util.Scanner;
 import utils.BasicOperation;
 
 
+
 /**
  *
  * @author Edison Lascano Hypertech ESPE-DCCO
@@ -22,6 +23,8 @@ public class ModularCalculator {
         float operand1;
         float operand2;
         float result;
+        int[][] matrix = {{1,2},{1,3}};
+
         
         Scanner input = new Scanner(System.in);
         
