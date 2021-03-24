@@ -22,18 +22,18 @@ public class SelectionSort {
                     pos = j;
                 }
 
-                //swap
             }
+            //swap
             unsortedArray[pos] = unsortedArray[i];
             unsortedArray[i] = minumum;
 
-            printMatrix(unsortedArray);
+            printElements(unsortedArray);
         }
 
         return unsortedArray;
     }
 
-    public void printMatrix(int[] unsortedArray) {
+    public void printElements(int[] unsortedArray) {
         for (int element : unsortedArray) {
             System.out.print(element + " \t ");
         }
@@ -52,13 +52,13 @@ public class SelectionSort {
                     minumumIndex = j;
                 }
 
-                //swap
             }
+            //swap
             pos = unsortedArray[minumumIndex];
             unsortedArray[minumumIndex] = unsortedArray[i];
             unsortedArray[i] = pos;
-            
-            printMatrix(unsortedArray);
+
+            printElements(unsortedArray);
         }
 
         return unsortedArray;

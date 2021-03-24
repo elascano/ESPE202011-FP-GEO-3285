@@ -51,15 +51,6 @@ public class Sorting {
         System.out.println("");
         printArray(sortedArray);
         
-//        int a=7;
-//        int b=9;
-//        System.out.println("a (inside main) -> " + a); //7
-//        System.out.println("b (inside main) -> " + b); //9
-//        System.out.println(" addition -> " + BubbleSort.add(a, b)); //16
-//        System.out.println("a (inside main after calling add())-> " + a); // 0 ? 7
-//        System.out.println("b (inside main after calling add())-> " + b); // 0 ? 9
-        
-
     }
 
     
