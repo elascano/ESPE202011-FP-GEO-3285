@@ -211,7 +211,7 @@ public class FrmChicken extends javax.swing.JFrame {
 
         emptyFields();
         btnShowChickensActionPerformed(evt);
-        //chickenController.populateChickensTable(tblChickens, chickens);
+        
 
     }//GEN-LAST:event_btnSaveActionPerformed
 
@@ -240,6 +240,9 @@ public class FrmChicken extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, "NOT FOUND", "NOT FOUND", JOptionPane.ERROR_MESSAGE);
         } else {
             tblChickens.setRowSelectionInterval(index, index);
+            cmbColor.setSelectedItem(chickens[index].getColor());
+            txtAge.setText(String.valueOf(chickens[index].getAge()));
+            cmbIsMolting.setSelectedItem(chickens[index].isIsMolting());
         }
 
     }//GEN-LAST:event_findChickenActionPerformed

@@ -73,5 +73,13 @@ public class ChickenController {
         }
 
     }
+    
+    public void sortChickens(Chicken[] chickens){
+        //SORT chikens to save them in a sorted file
+        
+    }
+    
+    
+    
 
 }

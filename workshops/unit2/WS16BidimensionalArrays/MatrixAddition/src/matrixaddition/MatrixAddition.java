@@ -18,12 +18,10 @@ public class MatrixAddition {
         int a[][] = {{5, 7, 9}, {9, 5, 8}, {3, 2, 4}};
         int b[][] = {{8, 3, 5}, {-5, 4, -3}, {9, 10, 24}};
 
-        //    5    7     9           8     3     5       13    10    14
-        //    9    5     8     +    -5     4    -3   =    4     9     5
-        //    3    2     4           9    10    24       12    12    28
         int c[][] = new int[3][3];
 
         addMatrices(c, a, b);
+        
 
         int[][] r;
         r = new int[3][3];
@@ -53,6 +51,10 @@ public class MatrixAddition {
             for (int j = 0; j < 3; j++) {
                 System.out.print("\t " + c[i][j]);
             }
+        }
+        System.out.println("");
+        for (int i=1;i<10;i+=2){
+            System.out.println("i -> " + i);
         }
 
         // 1 suma

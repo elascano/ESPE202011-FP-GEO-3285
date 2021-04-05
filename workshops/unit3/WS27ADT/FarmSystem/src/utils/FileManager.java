@@ -70,19 +70,14 @@ public class FileManager {
                 while ((br.readLine()) != null) {
                     numberOfLines++;
                 }
+                br.close();
             } catch (IOException ex) {
                 Logger.getLogger(FileManager.class.getName()).log(Level.SEVERE, null, ex);
             }
             return numberOfLines;
         } catch (FileNotFoundException ex) {
             Logger.getLogger(FileManager.class.getName()).log(Level.SEVERE, null, ex);
-        } finally {
-            try {
-                br.close();
-            } catch (IOException ex) {
-                Logger.getLogger(FileManager.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
+        } 
         return numberOfLines;
     }
 
